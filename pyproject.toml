@@ -1,0 +1,38 @@
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.tox
+    | \.venv
+    | build
+    | dist
+    | migrations
+    | static
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+[tool.poetry]
+name = "prd"
+version = "0.1.0"
+description = ""
+authors = ["cjcool <cjcool.tw@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+djangorestframework = "^3.14.0"
+Markdown = "^3.4.3"
+django-filter = "^23.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^6.0.0"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
