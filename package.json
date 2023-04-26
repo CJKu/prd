@@ -1,0 +1,17 @@
+{
+  "name": "prd",
+  "version": "1.0.0",
+  "description": "- Python: Python 3.10.4   - pyenv - Package Manager: poetry -  python version: 3.10.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
